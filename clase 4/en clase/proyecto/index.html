@@ -1,0 +1,284 @@
+<!DOCTYPE html><!-- esto es un comentario, para grabar en VS ctrl S-->
+<html lang="es">
+    <!--head son configuraciones para el navegador-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto integrador front | Agostina Aldaz</title>
+        <!-------Aca agrego el favicon------->
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/estilos.css">        
+    </head>
+
+    <!--dentro del body van las etiquetas que el usuario va a poder ver en la pagina web-->
+    <body>
+        <!--header es una etiqueta semantica, head son las configuraciones-->
+        <header class="cabecera">
+            <section class="logoNavegacion">
+                <a href="#">
+                    <img class="logo" src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0" loading="lazy">
+                </a>
+                <h2 class="titulo">Conf Bs As</h2>
+                <nav>
+                    <ul>
+                        <!--este ancla es blanca-->
+                        <li class="listaItem">
+                            <a class="colorBlanco anclaSinDec" href="#conferencia">La conferencia</a>
+                        </li>
+
+                        <!--estas anclas van en gris-->
+    
+                        <li class="listaItem">
+                            <a class="colorGris anclaSinDec" href="#oradores">Los oradores</a>
+                        </li>
+                        
+                        <li class="listaItem">
+                            <a class="colorGris anclaSinDec" href="#lugarFecha">El lugar y la fecha</a>
+                        </li>
+                        
+                        <li class="listaItem">
+                            <a class="colorGris anclaSinDec" href="#formularioOrador">Conviertete en orador</a>
+                        </li>
+                        
+                        <!--esta ultima va en verde-->
+                        <li class="listaItem">
+                            <a class="colorVerde anclaSinDec" href="./pages/tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            
+
+            <section id="conferencia">
+
+                <!--Esta imagen no va con html, es mejor practica ponerla como imagen de fondo
+                con css, asi que la dejo comentada
+                <img src="" alt="Imagen del Palacio de Aguas Argentinas">-->
+                
+                <div class="infoConferencia">
+
+                    <h1 class="tituloPrincipal">Conferencia Buenos Aires</h1>
+
+                    <p>
+                    Bs As llega por primera vez a Argentina. Un evento para compartir con
+                    nuestra comunidad el conocimiento y experiencia de los expertos que
+                    están creando el futuro de Internet. Ven a conocer a miembros del
+                    evento, a otros estudiantes de Codo a Codo y los oradores de primer 
+                    nivel que tenemos para ti. ¡Te esperamos!
+                    </p>
+
+                    <li class="listaItem">
+                        <a class="colorBlanco anclaSinDec botonSimple" href="#formularioOrador">Quiero  ser orador</a>
+
+                        <!--este "boton" va en fondo verde, fuente blanca normal-->
+                        <a class="colorBlanco anclaSinDec botonComprarTicket" href="./pages/tickets.html">Comprar tickets</a>
+
+
+                    </li>
+                </div>
+
+            </section>
+
+        </header>
+
+        <!-----------------fin header, inicio main-------------------------------------------->
+
+        <main class="main">
+            <!--article es contenido independiente, si lo mudo de seccion igual tiene sentido por si solo-->
+           <!--<article>
+            </article>-->
+
+            <!----------Primera seccion, CONOCE A LOS ORADORES-------------->
+
+            <section id="oradores">
+                <div class="contenedorTituloOradores">
+                    <!-------------Titulo de la seccion---------->
+                    <h2 class="tituloOradores">
+                        <div class="tituloPequeño">
+                            CONOCE A LOS
+                        </div>
+                        <div>
+                            ORADORES
+                        </div>
+                    </h2>
+                    <!--hay varias formas de lograr que el tit quede en dos renglones con html, aunque es mejor practica hacerlo con css-->
+                    
+                    
+                    <!--1--
+                    puedo etiquetar una parte con div(etiqueta en bloque, ocupa todo el ancho)
+                    y el resto tenga que quedar abajo obligatoriamente
+                    <h2><div>CONOCE A LOS</div> ORADORES</h2>
+
+                    --2--
+                    span es una etiqueta en linea (solo ocupa lo que ocupe su contenido),
+                    no voy a ver cambio de primera
+                    pero puedo estilarla de otra forma luego
+                    br es una etiqueta de salto de linea
+                    <h2><span>CONOCE A LOS</span><br>ORADORES</h2>
+
+                    3
+                    los dos titulos quedan separados por un margen,
+                    pero eso luego se puede modificar
+                    va practicamente en gusto del desarrollador
+                    <h2>CONOCE A LOS</h2>
+                    <h2>ORADORES</h2>-->
+
+                </div>
+
+
+                <!------------Tarjetas de los oradores de la primera seccion----------->
+                <div class="contenedorTarjetas">
+                    <div class="tarjeta">
+                        <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs sonriendo con un smartphone en la mano " loading="lazy">
+                        <div class="cuerpoTarjeta">
+                            <h4 class="cajaAmarillaTarjeta">JavaScript</h4>
+                            <h4 class="cajaAzulTarjeta">React Native</h4>
+                            <h3>Steve Jobs</h3>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta">
+                        <img src="./assets/img/bill.jpg" alt="Retrato de Bill Gates entrelazando sus manos" loading="lazy">
+                        <div class="cuerpoTarjeta">
+                            <h4 class="cajaAmarillaTarjeta">Sistemas operativos</h4>
+                            <h4 class="cajaAzulTarjeta">C++</h4>
+                            <h3>Bill Gates</h3>
+                            <p class="textoTarjeta">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta">
+                        <img src="./assets/img/ada.jpeg" alt="Retrato de Ada Lovelace" loading="lazy">
+                        <div class="cuerpoTarjeta">
+                            <h4 class="cajaGrisTarjeta">Algoritmos</h4>
+                            <h4 class="cajaRojaTarjeta">Cobol</h4>
+                            <h3>Ada Lovelace</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </section>  
+
+            <!----------Segunda seccion, lugar y fecha-------------->
+            
+            <section id="lugarFecha">
+                <!-------------Titulo de la seccion---------->
+                <div class="contenedorImgHonolulu">
+                    <img src="./assets/img/honolulu.jpg" alt="Mar del Plata" loading="lazy">
+                </div>
+                
+                <div class="contenedorTxtLugFec">
+                    <h2>Buenos Aires - Octubre</h2>
+
+                    <p>
+                        Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la 
+                        más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área 
+                        urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado 
+                        consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie)
+                    </p>
+                    
+                    <!--ancla tipo boton, puede redirigir donde yo quiera. En este caso a un error 404-->
+                    <a class="colorBlanco anclaSinDec botonSimple" href="./pages/404.html">Conoce más</a>
+                </div>
+            </section>
+
+
+            <!----------Tercera seccion, CONVIERTETE EN ORADOR-------------->
+
+            <section id="formularioOrador">
+                <!-------------Titulo de la seccion---------->
+
+                <h2>
+                    <div>
+                        CONVIÉRTETE EN UN
+                    </div> ORADOR
+                </h2>
+
+                <p>
+                    Anótate como orador para dar una <span>charla ignite</span>. ¡Cuéntanos de qué quieres hablar!
+                </p>
+
+                <!--etiqueta form, de tipo formulario. -->
+                <form action="./pages/404.html" method="get"> 
+                    <div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>    
+                    </div>
+
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="nombre@servidor.com">
+                        <input type="password" name="password" id="password" placeholder="contraseña">
+                    </div>
+
+                    <div>
+                        <textarea name="comentario" id="comentario" cols="55" rows="5" placeholder="¿Sobre qué quieres hablar?" required>   </textarea>
+                    </div>
+
+                    <div>
+                        <input type="reset" value="Limpiar formulario">
+                        <input type="submit" value="Enviar">
+                    </div>
+ 
+                </form>
+
+            </section>
+
+            <section>
+                <p>
+                    Encontranos
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1366237167395!2d-58.39758742425996!3d-34.60070657295539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfe23f5e3b%3A0x6f90fe1eadb235cf!2sMuseo%20del%20Agua%20y%20de%20la%20Historia%20Sanitaria!5e0!3m2!1ses-419!2sar!4v1696641614305!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
+        
+        </main>
+
+        <!-------Estructurar posible publicidad con la etiqueta aside. ej transporte, estadía----->
+        <aside class="aside">
+            <p>PUBLICIDAD</p>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LKUhqioO12g?si=FJ-J1_oZLF56tONo&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <p>¿Buscas traslado?</p>
+            </div>
+
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E62zt55Hrhw?si=nCg1OVLqnJHMLM39&amp;controls=0&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <p>¿Buscas como llegar?</p>
+            </div>
+
+            <div>
+                <a href="https://www.tripadvisor.com.ar/Hotels-g312741-Buenos_Aires_Capital_Federal_District-Hotels.html" target="_blank"><img src="./assets/img/img_hotel.webp" alt="Imagen de habitacion de hotel" loading="lazy"></a>
+                <p>¿Buscas alojamiento?</p>
+            </div>
+
+        </aside>
+
+
+        <footer class="footer">
+            <ul class="listaDesordenada">
+                <li class="listaItem">Preguntas frecuentes</li>
+                <li class="listaItem">Contáctanos</li>
+                <li class="listaItem">Prensa</li>
+                <li class="listaItem">Conferencias</li>
+                <li class="listaItem">Términos y condiciones</li>
+                <li class="listaItem">Privacidad</li>
+                <li class="listaItem">estudiantes</li>
+            </ul>
+
+        </footer>
+
+    </body>
+</html>
